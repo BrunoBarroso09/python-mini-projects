@@ -1,12 +1,12 @@
 class ToDo:
 
     def __init__(self):
-        self.task = []
+        self.tasks = []
         print("Todo List\n")
 
     def menu(self):
         while True:
-            print("---MENU---\n")
+            print("\n---MENU---\n")
             print("1. Add task")
             print("2. View task")
             print("3. Remove task")
@@ -34,13 +34,27 @@ class ToDo:
 
     def create_task(self):
         new_task = input("Write new task: ")
-        self.task.append(new_task)
+        self.tasks.append(new_task)
 
     def view_task(self):
-        return
+        print("Todo List\n")
+        for task in self.tasks:
+            print(f"{task:^15}")
 
     def remove_task(self):
-        return
+        if not self.tasks:
+            print("empty")
+            return
+        try:
+            for i, task in enumerate(self.tasks):
+                print(f"Position: {i + 1} - task: {task}")
+            remove = int(input("Pick the position to remove: "))
+            self.tasks.pop(remove - 1)
+            print("✅ Task removed successfully!")
+        except ValueError:
+            print('\n🚨 Error: Please insert a valid NUMBER (e.g., 1, 2, 3).')
+        except IndexError:
+            print('\n🚨 Error: Task you are trying to remove is not in the list.')
 
 task = ToDo()
 task.menu()
