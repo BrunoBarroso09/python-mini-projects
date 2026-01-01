@@ -2,13 +2,36 @@ import random
 
 class Guess:
     def __init__(self):
-        self.health = 5
+        self.health = 0
         self.random_number = random.randint(1, 20)
-        print(f"Game started and you have {self.health} health.\n")
+        print(f"Game started.\n")
+        self.menu()
 
     def decrease_health(self):
         self.health -= 1
         return self.health
+
+    def menu(self):
+        print("---Difficulty---\n")
+        print("1. Easy\n")
+        print("2. Medium\n")
+        print("3. Hard\n")
+        try:
+            difficulty = int(input("Select the difficulty: "))
+            match difficulty:
+                case 1:
+                    print("Selected the easy mode")
+                    self.health = 7
+                case 2:
+                    print("Selected the medium mode")
+                    self.health = 5
+                case 3:
+                    print("Selected the hard mode")
+                    self.health = 3
+                case _:
+                    print("Invalid option")
+        except ValueError:
+            print("Please, insert a valid option!")
 
     def play(self):
         while self.health > 0:
