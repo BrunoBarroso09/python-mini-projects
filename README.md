@@ -7,4 +7,6 @@
 [Guess the number] - https://github.com/BrunoBarroso09/python-mini-projects/blob/Dev/GuessTheNumber/script.py
 
 ## 📌 ToDo List
+✔️ **Game description** – This application is a simple and functional task manager, developed in Python, that handles lists. Through a command-line interface based on an interactive menu, the application allows the user to register new activities, view the current task list, and delete completed or unwanted tasks. The program uses a class structure to maintain the list state persistently during execution, employing specific methods for each CRUD (Create, Read, Delete) operation.
+
 [ToDo List] - https://github.com/BrunoBarroso09/python-mini-projects/blob/Dev/TodoList/script.py

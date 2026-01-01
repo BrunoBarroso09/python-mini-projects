@@ -37,9 +37,12 @@ class ToDo:
         self.tasks.append(new_task)
 
     def view_task(self):
-        print("Todo List\n")
-        for task in self.tasks:
-            print(f"{task:^15}")
+        if not self.tasks:
+            print("Empty list")
+        else:
+            print("Todo List\n")
+            for task in self.tasks:
+                print(f"{task:^15}")
 
     def remove_task(self):
         if not self.tasks:
