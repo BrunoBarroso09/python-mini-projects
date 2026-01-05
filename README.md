@@ -10,3 +10,8 @@
 ✔️ **Game description** – This application is a simple and functional task manager, developed in Python, that handles lists. Through a command-line interface based on an interactive menu, the application allows the user to register new activities, view the current task list, and delete completed or unwanted tasks. The program uses a class structure to maintain the list state persistently during execution, employing specific methods for each CRUD (Create, Read, Delete) operation.
 
 [ToDo List] - https://github.com/BrunoBarroso09/python-mini-projects/blob/Dev/TodoList/script.py
+
+## 📌 Calculator
+✔️ **Game description** - This is an interactive calculator application for the terminal, developed in Python with an Object-Oriented Programming framework. The program works through a loop menu that allows the user to choose between the four basic arithmetic operations or terminate execution.
+
+[Calculator] - https://github.com/BrunoBarroso09/python-mini-projects/blob/Dev/Calculator/script.py
